@@ -1,0 +1,57 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Mocha Tests</title>
+    <link href="index.css" rel="stylesheet" />
+    <link href="lib/mocha.css" rel="stylesheet" />
+    
+</head>
+<body>
+
+    <div>
+      <input id="inputName" type="text" placeholder="Fill your name here"
+      >
+        <button onclick="changeName()">
+          Submit name 
+        </button>
+        <div id="setInputName">
+
+        </div>
+      </div>
+
+
+    <img onclick= "rest(hero);" id='inn' src =https://images.squarespace-cdn.com/content/v1/59225780be659438f091c469/1559231115243-3N6TQHS0VAUCF3SB9WF4/ke17ZwdGBToddI8pDm48kKEe70UF8oKIO3wRkcdq3tB7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0lCvyAd1-5UQFnp8aARaJsU8w50hfP6ECqf2LiXqlTgywEBlp1ZSpm6UHJZ6Jnwuow/LimeRock%2BInn%2BExterior%2BHouse%2BPhoto.jpeg
+    
+
+     >
+
+
+    <img onclick = "pickUpItem(hero, hero.weapon)" id='dagger' src='https://www.coldsteel.com/media/catalog/product/cache/1/thumbnail/480x/17f82f742ffe127f42dca9de82fb58b1/9/2/92rdagz_3.jpg'
+    >
+
+    <img id='bag' onclick="equipWeapon(hero)" src ='https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/5571267/2018/4/30/11525083933884-LEGAL-BRIBE-Green-Solid-Handheld-Bag-2491525083933711-1.jpg'
+    >
+
+  <div id='statsDiv'>
+      <script>displayStats();</script>
+  </div>
+
+  <!-- 👍 YOUR HTML HERE 👍 -->
+
+
+
+  <!-- I RECOMMEND YOU LEAVE THE REST UNTOUCHED -->
+  <button onclick="mocha.checkLeaks(); mocha.run();">Run the tests!</button>
+
+  <div id="mocha">
+  <!-- MOCHA TEST FEEDBACK WILL BE RENDERED HERE -->
+  </div>
+
+  <script src="lib/chai.js"></script>
+  <script src="lib/mocha.js"></script>
+  <script src="lib/sinon.js"></script>
+  <script>mocha.setup('bdd')</script>
+  <script src="YOUR_JAVASCRIPT_HERE.js"></script>
+  <script src="lib/game_logic.test.js"></script>
+</body>
+</html>
